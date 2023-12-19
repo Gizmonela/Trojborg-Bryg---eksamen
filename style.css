@@ -1,0 +1,1815 @@
+@font-face {
+    font-family: FOMO;
+    src: url(fonts/FOMO.ttf);
+}
+
+@font-face {
+    font-family: My Coffee Break;
+    src: url(fonts/My\ Coffee\ Break.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.bla-skrift {
+    color: #346EB0;
+}
+
+/*--------------------------
+-----------Header-----------
+--------------------------*/
+
+.tom-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: My Coffee Break
+
+}
+
+.tom-side h1{
+    font-size: 90px;
+}
+
+.tom-side img{
+    width: 40%;
+    align-self: center;
+}
+
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 25px 15px;
+
+}
+
+
+
+p {
+    font-family: My Coffee Break;
+}
+
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.logo img {
+    width: 80px;
+    z-index: 1111;
+}
+
+.menu-open {
+    overflow: hidden;
+}
+
+.burger_plads a {
+    font-size: 25px;
+}
+
+.burger-menu {
+    display: block;
+    z-index: 1;
+}
+
+.burger-menu .bar {
+    width: 25px;
+    height: 0.5vw;
+    background-color: #000000;
+    margin: 6px 0;
+    z-index: 2;
+
+}
+
+.menu_fold_ud_venstre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.menu_fold_ud_højre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+nav {
+    display: none;
+}
+
+
+
+nav ul {
+    display: none;
+    border-top: 0;
+    transition: border-top 5s ease-in;
+    /* Tilføj en overgang til border-top */
+
+}
+
+nav.active {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 80%;
+    height: 55vh;
+    background-color: #ffffffdb;
+    gap: 40px;
+    z-index: 1111;
+    padding-top: 50px;
+}
+
+nav.active .menu_fold_ud_venstre {
+    width: 100%;
+}
+
+nav.active a{
+    font-size: 20px;
+}
+
+
+nav.active ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    border-top: 0;
+    transition: border-top 5s ease-in;
+    width: 100%;
+
+}
+
+.kasse_knap {
+    background-color: #DAD5C7;
+    padding: 7px 7px;
+    border: 2px solid #D63B45;
+}
+
+.kasse_knap_kant {
+    background-color: #01385F;
+    padding: 15px 25px;
+}
+
+
+.burger-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.burger-menu .close-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.burger-menu .close-icon:before,
+.burger-menu .close-icon:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: #1d1c1c;
+    top: 50%;
+    left: 0;
+}
+
+.burger-menu .close-icon:before {
+    transform: rotate(45deg);
+}
+
+.burger-menu .close-icon:after {
+    transform: rotate(-45deg);
+}
+
+
+
+
+nav.active ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav.active ul li a:hover {
+    color: #D63B45;
+}
+
+.dropdown {
+    font-family: My Coffee Break;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+nav.active ul .submenu {
+
+    font-family: FOMO;
+    font-size: 16px;
+    display: none;
+
+    bottom: 0px;
+    width: auto;
+    background-color: #ffffff00;
+    text-align: center;
+}
+
+
+/*header slut*/
+
+
+/*--------------------------
+-------------main-----------
+--------------------------*/
+
+/*knapper*/
+
+main {
+    margin: 0px 0px 35px 0px;
+}
+
+.knap-semere {
+    background-color: #D63B45;
+    border-radius: 10%;
+    padding: 5px 10px;
+    font-family: FOMO;
+}
+
+.knap-semere1 {
+    background-color: #D63B45;
+    border-radius: 10%;
+    padding: 5px 10px;
+    font-family: FOMO;
+}
+
+.knap-udvalg {
+    background-color: #D63B45;
+    border-radius: 10%;
+    padding: 5px 10px;
+    font-family: FOMO;
+}
+
+.knap-kob {
+    background-color: #D63B45;
+    border-radius: 10%;
+    padding: 5px 10px;
+    font-family: FOMO;
+}
+
+
+
+
+----------
+
+/*content*/
+----------- body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-size: 30px;
+    width: 100%;
+}
+
+
+h3 {
+
+    text-align: center;
+    font-family: FOMO;
+}
+
+h2 {
+    text-align: center;
+    font-family: FOMO;
+
+}
+
+.kollektion-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/aurasport.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    line-height: 20px;
+    color: white;
+    gap: 2vw;
+    padding: 20px 0px;
+
+}
+
+.kollektion-container img {
+
+    width: 30vw;
+}
+
+
+.illu-container img {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    right: 20vw;
+
+    width: 25vw;
+    bottom: 10vw;
+    right: 10vw;
+}
+
+.lob-container img {
+    position: absolute;
+    width: 30vw;
+    left: 5vw;
+    bottom: 12vw;
+
+
+}
+
+
+
+.vision-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 2vw;
+    padding: 30px 0px 40px;
+    margin-top: 10px;
+    font-family: FOMO;
+}
+
+.vision-container h6 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 40px;
+    line-height: 25px;
+    letter-spacing: .2rem;
+}
+
+
+
+.ol-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/enhver.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 2vw;
+    padding: 30px 0px;
+    margin-top: 10px;
+    font-family: FOMO;
+}
+
+
+.ol-container img {
+    width: 40vw;
+
+}
+
+.event-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/events.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 2vw;
+    padding: 30px 0px;
+    margin-top: 10px;
+    font-family: FOMO;
+}
+
+.event-container h3 {
+    text-align: center;
+    line-height: 20px;
+    padding: 0px 20vw 0px 20vw;
+}
+
+.event-container img {
+    width: 40vw;
+}
+
+
+/*-------kollektion--------*/
+.kollektion-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/aurasport.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 2vw;
+    padding: 30px 0px;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 2vw;
+    font-family: Roboto-Regular;
+}
+
+.illustration-container {
+    display: none;
+}
+
+.intro-container h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.intro-container p {
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 20px;
+    padding: 0px 40px 0px 40px;
+}
+
+.intro-container img {
+    align-items: center;
+    width: 30vw;
+    top: 30vw;
+}
+
+.bokse {
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+    font-size: 12px;
+    padding: 15px 0px;
+    font-family: FOMO;
+}
+
+.knap-boks h6 {
+    background-color: #D63B45;
+    border-radius: 10%;
+    padding: 10px 10px;
+    width: 25vw;
+}
+
+.knap-boks p {
+    display: none;
+}
+
+
+/*-------kollektion slutter--------*/
+
+
+/*-------øl starter--------*/
+
+.foto-ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.foto-ol img {
+    width: 100%;
+    background-color: #fc711b7e;
+    padding: 20px 20px;
+    border-radius: 10%;
+}
+
+.foto-ol p {
+    font-family: Roboto;
+    font-size: 12px;
+    text-align: start;
+    padding: 0px 0px 0px 0px;
+
+}
+
+.ol-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/orangeklassisk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 15vw;
+    padding: 30px 0px;
+
+}
+
+.ol-container2 h3 {
+    font-size: 20px;
+}
+
+.ol-container2 img {
+    width: 20vw;
+}
+
+.klassisk-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+
+}
+
+
+.foto-eksotisk {
+    width: 40%;
+}
+
+.foto-eksotisk img {
+    width: 40%;
+    background-color: #fc711b7e;
+    padding: 20px 20px;
+    border-radius: 10%;
+}
+
+.foto-eksotisk p {
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    text-align: start;
+
+}
+
+.ol-container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/lillalys\ copy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 15vw;
+    padding: 20px 0px;
+    margin-top: 15px;
+
+}
+
+.ol-container3 {
+    font-size: 20px;
+}
+
+.eksotisk-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+
+}
+
+
+
+
+/*-------øl slutter--------*/
+
+/*-------Event starter------*/
+.event-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/events.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 2vw;
+    padding: 30px 0px;
+}
+
+.event-container2 h3 {
+    font-size: 20px;
+}
+
+.event-container2 img {
+    width: 40vw;
+}
+
+.event-container2 p {
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 20px;
+    padding: 15px 40px 15px 40px;
+}
+
+.kalender-container {
+    display: none;
+}
+
+
+.boks-tekst p {
+    background-color: #D63B45;
+    border-radius: 10%;
+    padding: 5px 10px;
+    font-family: FOMO;
+}
+
+.knap-boks p {
+    font-family: FOMO;
+}
+
+
+
+.knap-book {
+    background-color: #D63B45;
+    border-radius: 10%;
+    padding: 10px 15px;
+    font-family: FOMO;
+    font-size: 10px;
+
+}
+
+.ol-smagning {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.billede-smag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.knap-download {
+    background-color: #D63B45;
+    border-radius: 10%;
+    padding: 5px 10px;
+}
+
+.knap-boks {
+    background-color: #D63B45;
+    border-radius: 10%;
+    padding: 5px 10px;
+}
+
+
+.smag-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/olsmagning.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 8vw;
+    padding: 30px 0px;
+    margin-top: 15px;
+}
+
+.smag-container h3 {
+    font-size: 20px;
+}
+
+.smag-container p {
+    font-size: 14px;
+}
+
+/*-------Event slutter-------*/
+
+/*------Alkoholfri starter------*/
+.alkoholfri-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 2vw;
+    padding: 30px 0px;
+}
+
+.alkoholfri-container img {
+    width: 20vw;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+.alkoholfri-container h3 {
+    font-size: 20px;
+    padding: 0px 40px 0px 40px;
+}
+
+.alkoholfri-container h2 {
+    margin-top: 35px;
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    padding: 0px 40px 0px 40px;
+}
+
+.alkoholfri-container p {
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 20px;
+    padding: 0px 40px 0px 40px;
+}
+
+.alko-bokse p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.alko-bokse p {
+    font-family: FOMO;
+
+}
+
+.alkoholfri-container h4 {
+    display: none;
+}
+
+/*-----Alkoholfri slutter-----*/
+
+/*-----Sundhed starter------*/
+.sundhed-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 2vw;
+    padding: 30px 0px;
+}
+
+.sundhed-container h3 {
+    font-size: 20px;
+
+}
+
+.sundhed-container p {
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 20px;
+    gap: 50px;
+    padding: 0px 40px 0px 40px;
+}
+
+.sundhed-container img {
+    width: 40vw;
+}
+
+/*------Sundhed slutter----*/
+
+/*------Kultur starter----*/
+.kultur-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 2vw;
+    padding: 30px 0px;
+}
+
+.kultur-container p {
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 20px;
+    padding: 0px 40px 0px 40px;
+    margin-top: 20px;
+}
+
+.kultur-container img {
+    width: 50vw;
+}
+
+/*------Kultur slutter----*/
+
+
+/*------Fakta starter----*/
+.fakta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 2vw;
+    padding: 50px 0px;
+}
+
+.fakta-container p {
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: .1rem;
+    line-height: 20px;
+    padding: 0px 40px 0px 40px;
+}
+
+/*-----FOOTER DRILLER-----*/
+
+/*------Fakta slutter----*/
+
+
+/*------Om os starter----*/
+.om-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/vision.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    color: white;
+    gap: 2vw;
+    padding: 30px 0px;
+}
+
+.om-container p {
+    font-family: Roboto-Regular;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: .2rem;
+    line-height: 20px;
+    padding: 0px 40px 0px 40px;
+}
+
+.om-container img {
+    width: 50vw;
+}
+
+/*------Om os slutter----*/
+
+
+/*--------------------------
+-----------footer-----------
+--------------------------*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #E06C74;
+    padding: 20px 0px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer div p {
+    font-family: FOMO;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer div div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* knap */
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+
+
+    transition: 100ms ease-in-out;
+    padding: 10px 10px;
+}
+
+.footer-icon img {
+    width: 20px;
+
+}
+
+
+.footer-icon:hover {
+    border: 5px solid #F2EFC4;
+    transition: 0.5s ease-in-out;
+}
+
+
+.footer-icon:active {
+    background-color: #FFFFFF;
+    transform: translateY(2px);
+    transition: 150ms ease-in-out;
+}
+
+
+
+
+/*--------------------------
+--------media queries-------
+--------------------------*/
+
+
+
+
+@media screen and (min-width: 600px) {
+
+    footer div p {
+        font-size: 30px;
+    }
+
+    .footer-icon img {
+        width: 3vw;
+    }
+
+    header {
+        padding: 5vw 15px;
+        position: fixed;
+        z-index: 1111;
+        width: 100%;
+    }
+
+    .burger-menu {
+        cursor: pointer;
+        display: none;
+    }
+
+    .illu-container {
+        display: none;
+    }
+
+    .lob-container {
+        display: none;
+    }
+
+    .kollektion-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 30px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+        gap: 2vw;
+        padding: 80px 0px;
+    }
+
+    .kollektion-container h3 {
+        font-size: 50px;
+        padding: 200px 0px 0px 100px;
+        align-self: flex-start;
+    }
+
+    .kollektion-container h2 {
+        font-size: 100px;
+        padding: 100px 90px 0px 90px;
+        align-self: flex-start;
+        margin-left: 10vw;
+    }
+
+    .kollektion-container img {
+        width: 18vw;
+        display: flex;
+        padding: 0px 150px 110px 0px;
+        align-self: flex-end;
+    }
+
+    .knap-kob {
+        position: absolute;
+        font-size: 50px;
+        padding: 20px 15px;
+        margin-left: 20vw;
+        bottom: 14vw;
+
+    }
+
+
+
+    .logo img {
+        width: 10vw;
+        z-index: 100000;
+    }
+
+
+    nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0px 40px 0px 40px;
+    }
+
+    nav p {
+        font-size: 2vw;
+    }
+
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        gap: 100px;
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    nav ul li div a {
+        text-decoration: none;
+        color: black;
+
+    }
+
+    nav ul li a:hover {
+        text-decoration: none;
+        color: #D63B45;
+
+    }
+
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        padding: 10px;
+    }
+
+
+    .dropdown-menu.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .dropdown {
+        font-size: 2vw;
+    }
+
+    .submenu {
+        font-family: FOMO;
+        flex-direction: column;
+        position: absolute;
+        font-size: 1.2vw;
+        bottom: -30px;
+        width: auto;
+        gap: 0;
+        background-color: #f8f8f8;
+        text-align: center;
+    }
+
+    .vision-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 30px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+        gap: 2vw;
+        padding: 150px 0px 150px;
+        margin-top: 20px;
+    }
+
+    .vision-container h3 {
+        font-size: 50px;
+    }
+
+    .vision-container h6 {
+        font-size: 30px;
+        padding: 0px 290px 0px 290px;
+        line-height: 50px;
+    }
+
+    .ol-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 30px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+        gap: 2vw;
+        padding: 100px 0px;
+        margin-top: 20px;
+    }
+
+    .ol-container h3 {
+        font-size: 60px;
+        align-self: flex-end;
+        padding: 0px 160px;
+    }
+
+    .ol-container img {
+        width: 35vw;
+        display: flex;
+        padding: 0px 0px 0px 160px;
+        align-self: flex-start;
+    }
+
+    .knap-udvalg {
+        position: absolute;
+        align-items: center;
+        font-size: 45px;
+        padding: 20px 15px;
+        margin-left: 14vw;
+        bottom: 14vw;
+    }
+
+    .event-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 30px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+        gap: 2vw;
+        margin-top: 20px;
+    }
+
+    .event-container h3 {
+        display: flex;
+        text-align: left;
+        font-size: 60px;
+        align-self: flex-start;
+        line-height: 60px;
+        padding: 50px 50px;
+        margin-right: 40vw;
+    }
+
+    .event-container img {
+        width: 30vw;
+        display: flex;
+        padding: 0px 150px 110px 0px;
+        align-self: flex-end;
+    }
+
+    .knap-semere {
+        position: absolute;
+        font-size: 50px;
+        padding: 20px 15px;
+        margin-left: 30vw;
+        bottom: 12vw;
+    }
+
+    /*----------Kollektion-------*/
+
+    .kollektion-container2 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 50px 0px 110px 0px;
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+        gap: 2vw;
+
+    }
+
+    .intro-container {
+        padding: 180px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+        gap: 2vw;
+    }
+
+    .intro-container h2 {
+        font-size: 60px
+    }
+
+    .intro-container p {
+        font-size: 30px;
+        line-height: 60px;
+        padding: 0px 200px 0px 200px;
+    }
+
+    .intro-container img {
+        position: absolute;
+        width: 25vw;
+        align-self: flex-start;
+        padding: 220px 150px 0px 150px;
+        margin-left: 100px;
+    }
+
+
+    .bokse {
+        font-size: 30px;
+        margin-left: 60vw;
+        margin-right: 18vw;
+        bottom: 12vw;
+        gap: 2vw;
+        font-family: Roboto-Regular;
+    }
+
+    .knap-boks h6 {
+        font-family: FOMO;
+    }
+
+    .knap-boks p {
+        display: block;
+        font-size: 15px;
+        line-height: 25px;
+        font-family: Roboto-Regular;
+    }
+
+    /*---------Slutter-------*/
+
+    /*---------Øl----------*/
+
+    .foto-ol {
+        padding-bottom: 80px;
+    }
+
+    .foto-ol p {
+        font-size: 20px;
+    }
+
+    .ol-container2 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 230px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+        gap: 2vw;
+    }
+
+    .ol-container2 h3 {
+        font-size: 50px;
+    }
+
+    .foto-ol img {
+        width: 15vw;
+    }
+
+    .foto-ol p {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 0px 150px 0px 170px;
+    }
+
+    .ol-container3 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 180px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        margin-top: 15;
+        gap: 2vw;
+    }
+
+    .ol-container3 h3 {
+        font-size: 50px;
+    }
+
+    .foto-eksotisk img {
+        width: 15vw;
+    }
+
+    .foto-eksotisk p {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 0px 150px 0px 170px;
+    }
+
+    /*--------øl slutter---------*/
+
+
+    .event-container2 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 130px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+        gap: 2vw;
+    }
+
+    .event-container2 h3 {
+        position: relative;
+        text-align: left;
+        font-size: 60px;
+        align-self: flex-start;
+        line-height: 60px;
+        padding: 50px 50px 50px 50px;
+        margin-top: 5vw;
+
+    }
+
+    .event-container2 img {
+        width: 35vw;
+        display: flex;
+
+        align-self: flex-start;
+
+    }
+
+    .event-container2 p {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 30px;
+        line-height: 60px;
+        text-align: end;
+        align-content: center;
+    }
+
+    .flex-row {
+        display: flex;
+        align-items: flex-start;
+        padding: 0px 20px 0px 100px;
+    }
+
+    .flex-row p {
+        display: flex;
+        align-items: flex-start;
+        padding: 0px 50px 0px 150px;
+    }
+
+
+    .tekst-row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0;
+    }
+
+
+
+    .boks-tekst p {
+        position: absolute;
+        justify-content: flex-start;
+        margin-left: 0px;
+        height: 0px;
+        bottom: 8vw;
+        left: 15vw;
+
+    }
+
+    .knap-download2 {
+        position: relative;
+        justify-content: center;
+        background-color: #D63B45;
+        border-radius: 10%;
+        font-family: FOMO;
+        margin-left: 0px;
+        height: 0px;
+
+    }
+
+    .smag-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 130px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        gap: 2vw;
+
+    }
+
+    .smag-container h3 {
+        position: relative;
+        text-align: center;
+        font-size: 60px;
+        align-self: flex-end;
+        line-height: 60px;
+        padding: 30px 250px 50px 50px;
+
+    }
+
+    .smag-container p {
+        position: relative;
+        text-align: left;
+        font-size: 30px;
+        align-self: flex-end;
+        line-height: 60px;
+        padding: 5px 100px 50px 100px;
+        font-family: Roboto-Regular;
+
+    }
+
+    .knap-book {
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .billede-smag {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+    }
+
+    .ol-smagning {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 70px;
+    }
+
+    .billede-smag {
+        gap: 70px;
+    }
+
+    .ol-smagning img {
+        width: 30vw;
+        display: flex;
+        padding: 0px 0px 10px 0px;
+        align-self: flex-end;
+        margin-top: 0vw;
+
+
+    }
+
+    .kalender-container img {
+        width: 35vw;
+    }
+
+    .kalender-container {
+        width: 40vw;
+        display: flex;
+        position: relative;
+        margin-right: 90px;
+
+
+    }
+
+
+    .alkoholfri-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 230px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        gap: 2vw;
+
+    }
+
+    .alkoholfri-container h3 {
+        display: none;
+    }
+
+    .alkoholfri-container h4 {
+        display: block;
+        font-family: Roboto-Regular;
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        align-self: center;
+        line-height: 60px;
+        padding: 30px 150px 50px 150px;
+    }
+
+
+    .alkoholfri-container h2 {
+        font-size: 60px
+    }
+
+    .alkoholfri-container img {
+        width: 20vw;
+        display: flex;
+        padding: 0px 0px 110px 220px;
+        align-self: center;
+        transform: rotate(-15deg);
+        margin-left: 25vw;
+    }
+
+    .alkoholfri-container p {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        align-self: flex-end;
+        line-height: 60px;
+        padding: 5px 10px 5px 10px;
+        font-family: Roboto-Regular;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+
+
+    .sundhed-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 230px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        gap: 2vw;
+    }
+
+    .sundhed-container h3 {
+        position: relative;
+        text-align: center;
+        font-size: 60px;
+        align-self: center;
+        line-height: 60px;
+        padding: 30px 0px 50px 0px;
+
+    }
+
+    .sundhed-container p {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        align-self: center;
+        line-height: 70px;
+        padding: 5px 180px 50px 180px;
+        font-family: Roboto-Regular;
+        margin-left: 30px;
+    }
+
+
+
+    .kultur-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 230px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        gap: 2vw;
+    }
+
+    .kultur-container h3 {
+        position: relative;
+        text-align: center;
+        font-size: 60px;
+        align-self: center;
+        line-height: 60px;
+        padding: 30px 0px 50px 0px;
+    }
+
+    .kultur-container p {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        align-self: center;
+        line-height: 70px;
+        padding: 5px 180px 50px 180px;
+        font-family: Roboto-Regular;
+        margin-left: 30px;
+    }
+
+    .kultur-container img {
+        width: 40vw;
+        display: flex;
+        padding: 0px 0px 0px 0px;
+        align-self: flex-start;
+        margin-left: 4vw;
+        bottom: 30px;
+    }
+
+    .fakta-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 230px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        gap: 2vw;
+    }
+
+    .fakta-container h3 {
+        position: relative;
+        text-align: center;
+        font-size: 60px;
+        align-self: center;
+        line-height: 60px;
+        padding: 30px 0px 50px 0px;
+    }
+
+    .fakta-container p {
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        align-self: center;
+        line-height: 70px;
+        padding: 5px 180px 50px 180px;
+        font-family: Roboto-Regular;
+        margin-left: 30px;
+    }
+
+    .om-container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 230px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        gap: 2vw;
+    }
+
+    .om-container h3 {
+        position: relative;
+        text-align: center;
+        font-size: 60px;
+        align-self: center;
+        line-height: 60px;
+        padding: 30px 0px 50px 0px;
+    }
+
+    .om-container img {
+        position: absolute;
+        width: 30vw;
+        display: flex;
+        padding: 0px 0px 550px 0px;
+        align-self: flex-end;
+        margin-top: 0vw;
+    }
+
+    .om-container p {
+        position: relative;
+        text-align: start;
+        font-size: 20px;
+        align-self: flex-start;
+        line-height: 60px;
+        padding: 5px 580px 50px 30px;
+        font-family: Roboto-Regular;
+
+    }
+
+
+    .bag-container {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        padding: 0px 0px 90px 0px;
+        position: relative;
+        width: 100%;
+        gap: 2vw;
+    }
+
+    .tada-container img {
+        width: 30vw;
+        display: flex;
+        padding: 0px 0px 0px 0px;
+        align-self: flex-start;
+        margin-top: 0vw;
+
+    }
+
+    .tada-container p {
+        position: relative;
+        text-align: end;
+        font-size: 20px;
+        align-self: flex-end;
+        line-height: 70px;
+        padding: 5px 30px 50px 500px;
+        font-family: Roboto-Regular;
+
+    }
+
+}
